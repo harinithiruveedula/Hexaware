@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="4 factorial"/>
+        <attribute name="authors" value="harini chowdary"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-03-13 01:46:27 PM"/>
+        <attribute name="created" value="aGFyaW5pIGNob3dkYXJ5O0hBUklOSV9DSE9XREFSWTsyMDI1LTAzLTEzOzAxOjMyOjA4IFBNOzM5NTM="/>
+        <attribute name="edited" value="aGFyaW5pIGNob3dkYXJ5O0hBUklOSV9DSE9XREFSWTsyMDI1LTAzLTEzOzAxOjQ2OjI3IFBNOzI7NDA2OA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="factorial of a number"/>
+            <output expression="&quot;enter the number&quot;" newline="True"/>
+            <declare name="num, fact, i" type="Integer" array="False" size=""/>
+            <input variable="num"/>
+            <assign variable="i" expression="1"/>
+            <assign variable="fact" expression="1"/>
+            <while expression="i&lt;=num">
+                <assign variable="fact" expression="fact*i"/>
+                <assign variable="i" expression="i+1"/>
+            </while>
+            <output expression="&quot;factorail of a number is &quot;&amp;&quot; &quot;&amp; fact" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
