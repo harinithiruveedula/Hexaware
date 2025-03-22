@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="10 roots"/>
+        <attribute name="authors" value="harini chowdary"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-03-13 04:18:14 PM"/>
+        <attribute name="created" value="aGFyaW5pIGNob3dkYXJ5O0hBUklOSV9DSE9XREFSWTsyMDI1LTAzLTEzOzAzOjQ2OjQ3IFBNOzM5NjM="/>
+        <attribute name="edited" value="aGFyaW5pIGNob3dkYXJ5O0hBUklOSV9DSE9XREFSWTsyMDI1LTAzLTEzOzA0OjE4OjE0IFBNOzI7NDA2Ng=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <output expression="&quot;enter a&quot;" newline="True"/>
+            <declare name="a, b, c, D, root1, root2, imgpart, realpart" type="Integer" array="False" size=""/>
+            <input variable="a"/>
+            <output expression="&quot;enter b&quot;" newline="True"/>
+            <input variable="b"/>
+            <output expression="&quot;enter c&quot;" newline="True"/>
+            <input variable="c"/>
+            <assign variable="D" expression="b^2-(4*a*c)"/>
+            <if expression="D&gt;0">
+                <then>
+                    <assign variable="root1" expression="(-b+sqrt(D))/(2*a)"/>
+                    <assign variable="root2" expression="(-b-sqrt(D))/(2*a)"/>
+                    <output expression="&quot;roots are real and distinct&quot;&amp;root1&amp;root2" newline="True"/>
+                </then>
+                <else>
+                    <if expression="D=0">
+                        <then>
+                            <assign variable="root1" expression="-b/(2*a)"/>
+                            <assign variable="root2" expression="-b/(2*a)"/>
+                            <output expression="&quot;roots are equal and real&quot;&amp;root1" newline="True"/>
+                        </then>
+                        <else>
+                            <assign variable="realpart" expression="-b/(2*a)"/>
+                            <assign variable="imgpart" expression="sqrt(-D)/(2*a)"/>
+                            <output expression="&quot;roots are complex&quot;&amp; realpart &amp; imgpart" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

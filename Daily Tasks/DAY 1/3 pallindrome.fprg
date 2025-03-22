@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="3 pallindrome"/>
+        <attribute name="authors" value="harini chowdary"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-03-13 01:46:01 PM"/>
+        <attribute name="created" value="aGFyaW5pIGNob3dkYXJ5O0hBUklOSV9DSE9XREFSWTsyMDI1LTAzLTEzOzAxOjEzOjEwIFBNOzM5NDU="/>
+        <attribute name="edited" value="aGFyaW5pIGNob3dkYXJ5O0hBUklOSV9DSE9XREFSWTsyMDI1LTAzLTEzOzAxOjQ2OjAxIFBNOzI7NDA2MA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="pallindrome-reverse of a number should be same as original number&#13;&#10;"/>
+            <output expression="&quot;Enter the number&quot;" newline="True"/>
+            <declare name="num, rev, temp" type="Integer" array="False" size=""/>
+            <input variable="num"/>
+            <assign variable="rev" expression="0"/>
+            <assign variable="temp" expression="num"/>
+            <while expression="num!=0">
+                <assign variable="rev" expression="rev*10+num%10"/>
+                <assign variable="num" expression="num/10"/>
+            </while>
+            <if expression="rev=temp">
+                <then>
+                    <output expression="&quot;it is pallindrome number&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;it is not pallindrome number&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
