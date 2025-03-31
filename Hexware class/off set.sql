@@ -1,2 +1,0 @@
----OFF SET AND FRETCH
---if we want limit particlar no of numbers to creatin exten to be displayed then we shall use offset and fetch option 
